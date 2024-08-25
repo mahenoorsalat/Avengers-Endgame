@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s ease-in-out;
+}
+
+.left-slide>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background: #000;
+
+}
+
+.left-slide h1 {
+    font-size: 2.5rem;
+
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.8s ease-in-out;
+}
+.buttons-container button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+
+
+}
+.button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #000;
+    font-size: 0.5rem;
+    background: teal;
+}
+#down-btn {
+    font-size: 45px;
+    transform: translateX(-147%);
+        color: #FFF;
+    background: transparent;
+}
+#up-btn {
+    font-size: 45px;
+    transform: translateX(12%) translateY(-106%);
+    color: #fff;
+    background: transparent;
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-one{
+    background: url(img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-two{
+    background: url(img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-three{
+    background: url(img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-four{
+    background: url(img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-five{
+    background: url(img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-six{
+    background: url(img5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width:420px)  {
+    #up-btn {
+        font-size: 28px;
+    }
+    .left-slide h1 {
+        font-size: 1rem;
+    
+    }
+    #down-btn{
+        font-size: 28px;
+    }
+}
