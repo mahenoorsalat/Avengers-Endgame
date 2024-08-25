@@ -26,3 +26,5 @@ function nextSlide(direction) {
 
 Dbtn.addEventListener('click', () => nextSlide('up'));
 Ubtn.addEventListener('click', () => nextSlide('down'));
+
+
